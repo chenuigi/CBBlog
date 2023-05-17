@@ -1,0 +1,411 @@
+<!doctype html>
+<html lang="zh">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<title>响应式简单个人博客</title>
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<link rel="stylesheet" type="text/css" href="statics/css/index.css" media="all" />
+</head>
+<style>
+	.over {position: fixed; left:0; top:0; width:70%; z-index:100;}
+	.tempContainer {position:fixed; width:50%; margin-top:7%;margin-bottom: 9%; margin-left:25%; text-align:center; z-index:101;
+		border: 1px solid rgba(0, 0, 0, .05);
+	box-shadow: 0 1px 4px rgba(0, 0, 0, .04);
+	border-radius: 3px; }
+	@media (max-width:800px){
+		.tempContainer {position:fixed; width:94%; margin-top:14%; margin-left:3%; text-align:center; z-index:101;}
+	}
+</style>
+<body class="home blog custom-background round-avatars">
+	<div class="Yarn_Background" style="background-image: url( statics/images/bbg.png);"></div>
+	<form class="js-search search-form search-form--modal" method="get" action="search.html" role="search">
+		<div class="search-form__inner">
+			<div>
+				<div id="search-container" class="ajax_search">
+					<form method="get" id="searchform" action="">
+						<div class="filter_container"><input type="text" value="" autocomplete="off"
+								placeholder="Type then select or enter" name="s" id="search-input" />
+							<ul id="search_filtered" class="search_filtered"></ul>
+						</div>
+						<input type="submit" name="submit" id="searchsubmit" class="searchsubmit" value="" />
+					</form>
+				</div>
+			</div>
+		</div>
+	</form>
+	<div class="navi" data-aos="fade-down">
+		<div class="bt-nav">
+			<div class="line line1"></div>
+			<div class="line line2"></div>
+			<div class="line line3"></div>
+		</div>
+		<div class="navbar animated fadeInRight">
+			<div class="inner">
+				<nav id="site-navigation" class="main-navigation">
+					<div id="main-menu" class="main-menu-container">
+						<div class="menu-menu-container">
+							<ul id="primary-menu" class="menu">
+								<li id="menu-item-17" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-17">
+									<a href="index.html">首页</a>
+								</li>
+								<li id="menu-item-173" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-173">
+									<a href="update.html">音乐</a>
+								</li>
+								<li id="menu-item-78" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-78">
+									<a href="photo.html">壁纸</a>
+								</li>
+								<li id="menu-item-252" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-252">
+									<a href="archives.html">分类</a>
+									<ul class="sub-menu">
+										<li id="menu-item-165" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-165">
+											<a href="article.html">文章</a>
+										</li>
+										<li id="menu-item-163" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-163">
+											<a href="tool.html">工具</a>
+										</li>
+										<li id="menu-item-924" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-924">
+											<a href="archives.html">归档</a>
+										</li>
+										<li id="menu-item-164" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-164">
+											<a href="about.html">关于</a>
+										</li>
+									</ul>
+								</li>
+								<li id="menu-item-57" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-57">
+									<a href="gustbook.html">留言</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</nav>
+			
+			</div>
+		</div>
+	</div>
+	<div class="hebin" data-aos="fade-down">
+		<i class=" js-toggle-search iconfont">&#xe60e;</i>
+	</div>
+	<header id="masthead" class="overlay animated from-bottom" itemprop="brand">
+		<div class="site-branding text-center">
+			
+			<h3 class="blog-description"><p>花有重开日</p></h3>
+		</div>
+	
+		<div class="decor-part">
+			<div id="particles-js"></div>
+		</div>
+		<div class="animation-header">
+		</div>
+	</header>
+	<div id="main" class="content">
+		<div class="container">
+			<style>
+				body.custom-background {
+					background: #fff;
+				}
+
+				.container {
+					padding: 10px 0px;
+				}
+			</style>
+			<section class="post_content">
+				<header class="post_header">
+					<h1 class="post_title"></h1>
+				</header>
+				<div class="links">
+					<h3 class="catalog-title">photo</h3>
+					<div class="catalog-description"></div>
+					<div class="catalog-share">sample reels</div>
+					<div class="userItems amplifyImg">
+
+						<div class="userItem">
+							<div class="userItem--inner">
+
+								<div class="userItem-content"><img alt='' src='./img/photo/微信图片_20211026120900.jpg'
+										id="min_img1" />
+									<div class="userItem-name">
+										<a class="link link--primary" target="_blank">Akina</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="userItem">
+							<div class="userItem--inner">
+								<div class="userItem-content"><img alt='' src='./img/photo/微信图片_20211026130224.jpg'
+										id="min_img2" />
+									<div class="userItem-name">
+										<a class="link link--primary" target="_blank">Meow</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="userItem">
+							<div class="userItem--inner">
+								<div class="userItem-content"><img alt='' src='./img/photo/微信图片_202110261209002.jpg' />
+									<div class="userItem-name">
+										<a class="link link--primary"  target="_blank">Meow</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="userItem">
+							<div class="userItem--inner">
+								<div class="userItem-content"><img alt='' src='./img//photo/微信图片_202110261209003.jpg' />
+									<div class="userItem-name">
+										<a class="link link--primary"  target="_blank">Tokin</a>
+									</div>
+								</div>
+							</div>
+						</div>
+
+
+						<div class="userItem">
+							<div class="userItem--inner">
+								<div class="userItem-content"><img alt='' src='./img/photo/微信图片_202110261209004.jpg' />
+									<div class="userItem-name">
+										<a class="link link--primary"  target="_blank">Tokin</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="userItem">
+							<div class="userItem--inner">
+								<div class="userItem-content"><img alt='' src='./img/photo/微信图片_202110261209005.jpg' />
+									<div class="userItem-name">
+										<a class="link link--primary" target="_blank">Tokin</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="userItem">
+							<div class="userItem--inner">
+								<div class="userItem-content"><img alt='' src='./img/photo/微信图片_202110261209006.jpg' />
+									<div class="userItem-name">
+										<a class="link link--primary"  target="_blank">Tokin</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="userItem">
+							<div class="userItem--inner">
+								<div class="userItem-content"><img alt='' src='./img/photo/微信图片_202110261209007.jpg' />
+									<div class="userItem-name">
+										<a class="link link--primary" target="_blank">Tokin</a>
+									</div>
+								</div>
+							</div>
+						</div>
+
+
+						<div class="userItem">
+							<div class="userItem--inner">
+								<div class="userItem-content"><img alt='' src='./img/photo/微信图片_202110261209008.jpg' />
+									<div class="userItem-name">
+										<a class="link link--primary"  target="_blank">Meow</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="userItem">
+							<div class="userItem--inner">
+								<div class="userItem-content"><img alt='' src='./img/photo/微信图片_202110261209009.jpg' />
+									<div class="userItem-name">
+										<a class="link link--primary"  target="_blank">Meow</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="userItem">
+							<div class="userItem--inner">
+								<div class="userItem-content"><img alt='' src='./img/photo/微信图片_2021102612090010.jpg' />
+									<div class="userItem-name">
+										<a class="link link--primary"  target="_blank">Meow</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="userItem">
+							<div class="userItem--inner">
+								<div class="userItem-content"><img alt='' src='./img/photo/微信图片_2021102612090011.jpg' />
+									<div class="userItem-name">
+										<a class="link link--primary" target="_blank">Tokin</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="userItem">
+							<div class="userItem--inner">
+								<div class="userItem-content"><img alt='' src='./img/photo/微信图片_202110261302243.jpg' />
+									<div class="userItem-name">
+										<a class="link link--primary"  target="_blank">Tokin</a>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="userItem">
+							<div class="userItem--inner">
+								<div class="userItem-content"><img alt='' src='./img/photo/微信图片_202110261302241.jpg' />
+									<div class="userItem-name">
+										<a class="link link--primary"  target="_blank">Tokin</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="userItem">
+							<div class="userItem--inner">
+								<div class="userItem-content"><img alt='' src='./img/photo/微信图片_202110261302242.jpg' />
+									<div class="userItem-name">
+										<a class="link link--primary"  target="_blank">Tokin</a>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="userItem">
+							<div class="userItem--inner">
+								<div class="userItem-content"><img alt='' src='./img/photo/微信图片_202110261302244.jpg' />
+									<div class="userItem-name">
+										<a class="link link--primary"  target="_blank">Tokin</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="userItem">
+							<div class="userItem--inner">
+								<div class="userItem-content"><img alt='' src='./img/photo/微信图片_202110261302245.jpg' />
+									<div class="userItem-name">
+										<a class="link link--primary"  target="_blank">Tokin</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="userItem">
+							<div class="userItem--inner">
+								<div class="userItem-content"><img alt='' src='./img/photo/微信图片_202110261302246.jpg' />
+									<div class="userItem-name">
+										<a class="link link--primary"  target="_blank">Tokin</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div id="outerdiv"
+							style="position:fixed;top:0;left:0;background:rgba(0,0,0,0.7);z-index:2;width:100%;height:100%;display:none;">
+							<div id="innerdiv" style="position:absolute;">
+								<img id="max_img" style="border:5px solid #fff;" src="" />
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</section>
+		</div>
+	</div>
+
+	<footer id="footer" class="overlay animated from-top">
+		<div class="decor-wrapper">
+			<svg id="footer-decor" class="decor top" xmlns="http://www.w3.org/2000/svg" version="1.1"
+				viewBox="0 0 100 100" preserveAspectRatio="none">
+				<path class="large left" d="M0 0 L50 50 L0 100" fill="rgba(255,255,255, .1)"></path>
+				<path class="large right" d="M100 0 L50 50 L100 100" fill="rgba(255,255,255, .1)"></path>
+				<path class="medium left" d="M0 0 L50 50 L0 66.6" fill="rgba(255,255,255, .3)"></path>
+				<path class="medium right" d="M100 0 L50 50 L100 66.6" fill="rgba(255,255,255, .3)"></path>
+				<path class="small left" d="M0 0 L50 50 L0 33.3" fill="rgba(255,255,255, .5)"></path>
+				<path class="small right" d="M100 0 L50 50 L100 33.3" fill="rgba(255,255,255, .5)"></path>
+				<path d="M0 0 L50 50 L100 0 L0 0" fill="rgba(255,255,255, 1)"></path>
+				<path d="M48 48 L50 51 L52 48 L48 48" fill="rgba(255,255,255, 1)"></path>
+			</svg>
+		</div>
+
+
+		<script type='text/javascript' src='statics/js/jquery.min.js'></script>
+		<script type='text/javascript' src='statics/js/plugins.js'></script>
+		<script type='text/javascript' src='statics/js/script.js'></script>
+		<script type='text/javascript' src='statics/js/particles.js'></script>
+		<script type='text/javascript' src='statics/js/aos.js'></script>
+
+		<script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+	
+
+		<script>
+            $(document).ready(function () {
+                 var imgsObj = $('.amplifyImg img');//需要放大的图像
+                if(imgsObj){
+                     $.each(imgsObj,function(){
+                         $(this).click(function(){
+                             var currImg = $(this);
+                            coverLayer(1);
+                            var tempContainer = $('<div class=tempContainer></div>');//图片容器
+                            with(tempContainer){//width方法等同于$(this)
+                                appendTo("body");
+                                 var windowWidth=$(window).width();
+                                var windowHeight=$(window).height();
+                                //获取图片原始宽度、高度
+                                var orignImg = new Image();
+                               orignImg.src =currImg.attr("src") ;
+                                var currImgWidth= orignImg.width;
+                                var currImgHeight = orignImg.height;
+                                if(currImgWidth<windowWidth){//为了让图片不失真，当图片宽度较小的时候，保留原图
+                                    if(currImgHeight<windowHeight){
+                                        var topHeight=(windowHeight-currImgHeight)/2;
+                                        if(topHeight>35){/*此处为了使图片高度上居中显示在整个手机屏幕中：因为在android,ios的微信中会有一个title导航，35为title导航的高度*/
+                                           topHeight=topHeight-35;
+                                             css('top',topHeight);
+                                        }else{
+                                           css('top',0);
+                                         }
+                                        html('<img border=0 src=' + currImg.attr('src') + '>');
+                                    }else{
+                                         css('top',0);
+                                        html('<img border=0 src=' + currImg.attr('src') + ' height='+windowHeight+'>');
+                                    }
+                               }else{
+                                     var currImgChangeHeight=(currImgHeight*windowWidth)/currImgWidth;
+                                     if(currImgChangeHeight<windowHeight){
+                                        var topHeight=(windowHeight-currImgChangeHeight)/2;
+                                        if(topHeight>35){
+                                             topHeight=topHeight-35;
+                                            css('top',topHeight);
+                                        }else{
+                                             css('top',0);
+                                         }
+                                         html('<img border=0 src=' + currImg.attr('src') + ' width='+windowWidth+';>');
+                                     }else{
+                                         css('top',0);
+                                         html('<img border=0 src=' + currImg.attr('src') + ' width='+windowWidth+'; height='+windowHeight+'>');
+                                     }
+                                }
+                            }
+                            tempContainer.click(function(){
+                                 $(this).remove();
+                                coverLayer(0);
+                            });
+                        });
+                     });
+                 }
+                 else{
+                    return false;
+                }
+                 //使用禁用蒙层效果
+                function coverLayer(tag){
+                    with($('.over')){
+                        if(tag==1){
+                            css('height',$(document).height());
+                             css('display','block');
+                             css('opacity',1);
+                            css("background-color","#FFFFFF");
+                            css("background-color","rgba(0,0,0,0.7)" );  //蒙层透明度
+                         }
+                        else{
+                            css('display','none');
+                         }
+                    }
+                 }
+            });
+        </script>
+</body>
+
+</html>

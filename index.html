@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="zh">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<title>响应式简单个人博客</title>
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<link rel="stylesheet" type="text/css" href="statics/css/index.css" media="all" />
+	</head>
+
+
+	<body class="home blog custom-background round-avatars">
+		<div class="Yarn_Background" style="background-image: url( statics/images/bbg.png);"></div>
+		<!-- js实现搜索框搜索功能 -->
+		<form class="js-search search-form search-form--modal" method="get" action="search.html" role="search">
+			<div class="search-form__inner">
+				<div>
+					<div id="search-container" class="ajax_search">
+						<form method="get" id="searchform" action="">
+							<div class="filter_container"><input type="text" value="" autocomplete="off" placeholder="Type then select or enter" name="s" id="search-input" />
+								<ul id="search_filtered" class="search_filtered"></ul>
+							</div>
+							<input type="submit" name="submit" id="searchsubmit" class="searchsubmit" value="" />
+						</form>
+					</div>
+				</div>
+			</div>
+		</form>
+
+		<!-- 右上角分类栏 -->
+		<div class="navi" data-aos="fade-down">
+			<div class="bt-nav">
+				<div class="line line1"></div>
+				<div class="line line2"></div>
+				<div class="line line3"></div>
+			</div>
+			<div class="navbar animated fadeInRight">
+				<div class="inner">
+					<nav id="site-navigation" class="main-navigation">
+						<div id="main-menu" class="main-menu-container">
+							<div class="menu-menu-container">
+								<ul id="primary-menu" class="menu">
+									<li id="menu-item-17"
+										class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-17">
+										<a href="index.html">首页</a>
+									</li>
+									<li id="menu-item-173" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-173">
+										<a href="update.html">音乐</a>
+									</li>
+									<li id="menu-item-78" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-78">
+										<a href="photo.html">壁纸</a>
+									</li>
+									<li id="menu-item-252"
+										class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-252">
+										<a href="archives.html">分类</a>
+										<ul class="sub-menu">
+											<li id="menu-item-165" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-165">
+												<a href="article.html">文章</a>
+											</li>
+											<li id="menu-item-163" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-163">
+												<a href="tool.html">工具</a>
+											</li>
+											<li id="menu-item-924" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-924">
+												<a href="archives.html">归档</a>
+											</li>
+											<li id="menu-item-164" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-164">
+												<a href="about.html">关于</a>
+											</li>
+										</ul>
+									</li>
+									<li id="menu-item-57" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-57">
+										<a href="gustbook.html">留言</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</nav>
+				
+				</div>
+			</div>
+		</div>
+
+		<!-- 搜索框 -->
+		<div class="hebin" data-aos="fade-down">
+			<i class=" js-toggle-search iconfont">&#xe60e;</i>
+		</div>
+		
+		<!-- 整个头部页面 -->
+		<header id="masthead" class="overlay animated from-bottom" itemprop="brand">
+			<div class="site-branding text-center">
+			
+				<h3 class="blog-description"><p>生活，不止眼前的苟且，还有诗和远方</p></h3>
+			</div>
+			
+			<div class="decor-part">
+				<div id="particles-js"></div>
+			</div>
+		</header>
+
+		<!-- 主内容：中间内容 -->
+		<div id="main" class="content">
+			<div class="container">
+				<article itemscope="itemscope">
+					<div class="posts-list js-posts">
+					<!-- 第一个内容框 -->
+					<div class="post post-layout-list" data-aos="fade-up">
+						<div class="status_list_item icon_kyubo">
+							<div class="status_user" style="background-image: url(statics/images/blog31.png);">
+								<div class="status_section">
+									<a href="detail.html" class="status_btn">【Vue学习】- Node.js入门学习</a>
+									<p class="section_p">Node.js 是一个基于 Chrome V8 引擎 的 JavaScript 运行环境。就像java的运行环境jdk，Node.js是JavaScript的运行环境，不需要浏览器，直接使用node.js运行JavaScript代码.Nodejs基于Javascript语言，不用再单独新学一门陌生的语言，从而减低了学习的门槛...... </p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- 第二个内容框 -->
+					<div class="post post-layout-list" data-aos="fade-up">
+						<div class="postnormal review ">
+							<div class="post-container review-item">
+								<div class="row review-item-wrapper">
+									<div class="col-sm-3">
+										<a rel="nofollow" href="detail.html">
+											<div class="review-item-img" style="background-image: url(statics/images/diego-ph-249471-2-800x1000.jpg);"></div>
+										</a>
+									</div>
+									<div class="col-sm-9 flex-xs-middle">
+										<div class="review-item-title">
+											<a href="detail.html" rel="bookmark" style="color: #000;">愿你编码半生，归来仍是少年</a>
+										</div>
+										<div class="review-item-creator" style="color: #000;"><b>发布日期：</b>2021-11-20</div>
+										<span class="review-item-info" style="color: #000;"><b>总浏览量：</b>1203 点击</span>
+									</div>
+								</div>
+								<div class="review-bg-wrapper">
+									<div class="bg-blur" style="background-image: url(statics/images/diego-ph-249471-2-800x1000.jpg);"></div>
+								</div>
+							</div>
+							<div class="post-container">
+								<div class="entry-content" >多年以后，愿你的城市有清风有烈酒，也有人是你的归途，愿你编码半生，归来仍是少年，愿时机已成熟，已是枝繁叶茂！......</div>
+								<div class="post-footer">
+									<a class="gaz-btn primary" href="">点击阅读</a>
+									<span class="total-comments-on-post pull-right"><a href="">31 评论</a></span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- 第三个内容框 -->
+					<div class="post post-layout-list" data-aos="fade-up">
+						<div class="status_list_item icon_kyubo">
+							<div class="status_user" style="background-image: url(statics/images/blog24.jpg);">
+								<div class="status_section">
+									<a href="detail.html" class="status_btn">【Vue 学习】- VueJS 生命周期</a>
+									<p class="section_p">Vue 的生命周期可以分为 8 个生命周期的执行点，从 new 创建 Vue 对象到对象的销毁，其中 4 个基本的，4 个特殊的，在下图中，红色标注的就是 8 个生命周期的执行点，前四个为基本的，后四个为特殊的...... </p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- 第三个内容框 -->
+					<div class="post post-layout-list" data-aos="fade-up">
+						<div class="status_list_item icon_kyubo">
+							<div class="status_user" style="background-image: url(statics/images/vue2.jpeg);">
+								<div class="status_section">
+									<a href="detail.html" class="status_btn">【Vue 学习】- Vue常用系统指令</a>
+									<p class="section_p">本文将对Vue的常用系统指令进行学习，包括v-on 指令、v-text 、v-html、v-blind指令、v-model指令、v-for指令、v-if 与 v-show指令，每个指令都给出案例进行演示...... </p>
+								</div>
+							</div>
+						</div>
+					</div>
+				
+					<!-- 第五个内容框 -->
+					<div class="post post-layout-list" data-aos="fade-up">
+						<div class="postnormal review ">
+							<div class="post-container review-item">
+								<div class="row review-item-wrapper">
+									<div class="col-sm-3">
+										<a rel="nofollow" href="detail.html">
+											<div class="review-item-img" style="background-image: url(statics/images/47fb3c_9afed6c259f94589881bd55376206366mv2_d_3840_5784_s_4_2-800x450.jpg);"></div>
+										</a>
+									</div>
+									<div class="col-sm-9 flex-xs-middle">
+										<div class="review-item-title">
+											<a href="detail.html" rel="bookmark" style="color: #000;">我想要的，到底是什么？</a>
+										</div>
+										<div class="review-item-creator" style="color: #000;"><b>发布日期：</b>2021-11-05</div>
+										<span class="review-item-info" style="color: #000;"><b>总浏览量：</b>1600 点击</span>
+									</div>
+								</div>
+								<div class="review-bg-wrapper">
+									<div class="bg-blur" style="background-image: url(statics/images/47fb3c_9afed6c259f94589881bd55376206366mv2_d_3840_5784_s_4_2-800x450.jpg);"></div>
+								</div>
+							</div>
+							<div class="post-container">
+								<div class="entry-content">现在的明星的影响力足以影响国内娱乐圈的"半壁江山"，发条微博，新浪都恐慌好几天，来来来，蹭个热点给大家介绍一下我的女朋友。</div>
+								<div class="post-footer">
+									<a class="gaz-btn primary" href="detail.html">点击阅读</a>
+									<span class="total-comments-on-post pull-right"><a href="">30 评论</a></span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+					<!-- 这里用了iconfont阿里图标 实现搜索框 -->
+					<div class="pagination js-pagination">
+						<div class="js-next pagination__load">
+							<a href=""><i class="iconfont">&#xe605;</i></a>
+						</div>
+					</div>
+			</div>
+		</div>
+		<!-- 底部背景图片 -->
+		<footer id="footer" class="overlay animated from-top">
+			<div class="decor-wrapper">
+			</div>
+			<script type='text/javascript' src='statics/js/jquery.min.js'></script>
+			<script type='text/javascript' src='statics/js/plugins.js'></script>
+			<script type='text/javascript' src='statics/js/script.js'></script>
+			<script type='text/javascript' src='statics/js/particles.js'></script>
+			<script type='text/javascript' src='statics/js/aos.js'></script>
+	</body>
+
+</html>

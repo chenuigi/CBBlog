@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="zh">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<title>响应式简单个人博客</title>
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<link rel="stylesheet" type="text/css" href="statics/css/index.css" media="all" />
+	</head>
+
+
+	<body class="home blog custom-background round-avatars">
+		<div class="Yarn_Background" style="background-image: url( statics/images/bbg.png);"></div>
+		<!-- js实现搜索框搜索功能 -->
+		<form class="js-search search-form search-form--modal" method="get" action="search.html" role="search">
+			<div class="search-form__inner">
+				<div>
+					<div id="search-container" class="ajax_search">
+						<form method="get" id="searchform" action="">
+							<div class="filter_container"><input type="text" value="" autocomplete="off" placeholder="Type then select or enter" name="s" id="search-input" />
+								<ul id="search_filtered" class="search_filtered"></ul>
+							</div>
+							<input type="submit" name="submit" id="searchsubmit" class="searchsubmit" value="" />
+						</form>
+					</div>
+				</div>
+			</div>
+		</form>
+
+		<!-- 右上角分类栏 -->
+		<div class="navi" data-aos="fade-down">
+			<div class="bt-nav">
+				<div class="line line1"></div>
+				<div class="line line2"></div>
+				<div class="line line3"></div>
+			</div>
+            <div class="navbar animated fadeInRight">
+				<div class="inner">
+					<nav id="site-navigation" class="main-navigation">
+						<div id="main-menu" class="main-menu-container">
+							<div class="menu-menu-container">
+								<ul id="primary-menu" class="menu">
+									<li id="menu-item-17" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-17">
+										<a href="index.html">首页</a>
+									</li>
+									<li id="menu-item-173" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-173">
+										<a href="update.html">音乐</a>
+									</li>
+									<li id="menu-item-78" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-78">
+										<a href="photo.html">壁纸</a>
+									</li>
+									<li id="menu-item-252" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-252">
+										<a href="archives.html">分类</a>
+										<ul class="sub-menu">
+											<li id="menu-item-165" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-165">
+												<a href="article.html">文章</a>
+											</li>
+											<li id="menu-item-163" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-163">
+												<a href="tool.html">工具</a>
+											</li>
+											<li id="menu-item-924" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-924">
+												<a href="archives.html">归档</a>
+											</li>
+											<li id="menu-item-164" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-164">
+												<a href="about.html">关于</a>
+											</li>
+										</ul>
+									</li>
+									<li id="menu-item-57" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-57">
+										<a href="gustbook.html">留言</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</nav>
+					<!-- #site-navigation -->
+				</div>
+			</div>
+		</div>
+
+		<!-- 搜索框 -->
+		<div class="hebin" data-aos="fade-down">
+			<i class=" js-toggle-search iconfont">&#xe60e;</i>
+		</div>
+		
+		<!-- 整个头部页面 -->
+		<header id="masthead" class="overlay animated from-bottom" itemprop="brand">
+			<div class="site-branding text-center">
+				<a href="">
+					<figure>
+						
+					</figure>
+				</a>
+				
+			</div>
+			
+			<div class="decor-part">
+				<div id="particles-js"></div>
+			</div>
+		</header>
+
+		<!-- 主内容：中间内容 -->
+		<div id="main" class="content">
+			<div class="container">
+				<article itemscope="itemscope">
+					<div class="posts-list js-posts">
+						<!-- 第一个内容框 -->
+						<div class="post post-layout-list" data-aos="fade-up">
+							<div class="status_list_item icon_kyubo">
+								<div class="status_user" style="background-image: url(statics/images/css.jpg);">
+									<div class="status_section">
+										<a href="detail.html" class="status_btn">页面css一键提取插件</a>
+										<p class="section_p">1、数据库三大范式 第一范式：每个列都不可再拆分第二范式：在第一范式的基础上，非主键列完全依赖于主键，而不能是依赖于主键的一部分第三范式：在第二范式的基础上，非主键列只依赖于主键，不依赖于其他非主键在设计数据库结构时，要尽量遵守三范式，如果不遵守，必须有足够的理由，比如性能，事实上我们经常会为了性能 ... </p>
+									</div>
+								</div>
+							</div>
+						</div>
+                        					<!-- 第一个内容框 -->
+						<div class="post post-layout-list" data-aos="fade-up">
+							<div class="status_list_item icon_kyubo">
+								<div class="status_user" style="background-image: url(statics/images/ai.jpg);">
+									<div class="status_section">
+										<a href="detail.html" class="status_btn">
+                                            图片智能放大插件</a>
+										<p class="section_p">作为一个开发者，我们有时候可能会参考网上某一个网页的样式，我们需要在开发者模式找到节点使用的样式并将其一个个做整理，这样未免有些麻烦，今天给大家推荐一个可以一键提取页面css的插件。 插件...</p>
+									</div>
+								</div>
+							</div>
+						</div>
+                        					<!-- 第一个内容框 -->
+						<div class="post post-layout-list" data-aos="fade-up">
+							<div class="status_list_item icon_kyubo">
+								<div class="status_user" style="background-image: url(statics/images/id-photo.jpg);">
+									<div class="status_section">
+										<a href="detail.html" class="status_btn">电子证件照换底色插件</a>
+										<p class="section_p">我们在填写一些资料的时候比如某某报名都可能会让你提供电子证件照，每个地方可能要求的背景颜色还不一样，有的可能要求红色背景的，有的要求蓝色背景的，通过一些修图软件比如ps我们可以实现证件照换背景色... </p>
+									</div>
+								</div>
+							</div>
+						</div>
+                        					<!-- 第一个内容框 -->
+						<div class="post post-layout-list" data-aos="fade-up">
+							<div class="status_list_item icon_kyubo">
+								<div class="status_user" style="background-image: url(statics/images/code-1.jpg);">
+									<div class="status_section">
+										<a href="detail.html" class="status_btn">在线代码运行插件</a>
+										<p class="section_p">作为程序员，如果需要测试一段并不是自己常用语言的代码，如果自己本地已经搭建了环境还算简单，但是如果需要重新搭建环境的话未免太过于复杂，今天给大家推荐一个轻松在线运行各种语言代码的插件。 插...</p>
+									</div>
+								</div>
+							</div>
+						</div>
+                        					<!-- 第一个内容框 -->
+						<div class="post post-layout-list" data-aos="fade-up">
+							<div class="status_list_item icon_kyubo">
+								<div class="status_user" style="background-image: url(statics/images/qr.jpg);">
+									<div class="status_section">
+										<a href="detail.html" class="status_btn">图片二维码识别插件</a>
+										<p class="section_p">我们在网上冲浪的过程中，可能会经常遇到一些二维码图片，这些二维码可能对应着一个网址，或者是一段文字信息，如果我们要想知道二维码的内容，需要先将二维码图片保存到本地，再使用一些在线的二维码解码工具... </p>
+									</div>
+								</div>
+							</div>
+						</div>
+                  
+					
+					<!-- 这里用了iconfont阿里图标 实现搜索框 -->
+					<div class="pagination js-pagination">
+						<div class="js-next pagination__load">
+							<a href=""><i class="iconfont">&#xe605;</i></a>
+						</div>
+					</div>
+			</div>
+		</div>
+		<!-- 底部背景图片 -->
+		<footer id="footer" class="overlay animated from-top">
+			<div class="decor-wrapper">
+			</div>
+			<script type='text/javascript' src='statics/js/jquery.min.js'></script>
+			<script type='text/javascript' src='statics/js/plugins.js'></script>
+			<script type='text/javascript' src='statics/js/script.js'></script>
+			<script type='text/javascript' src='statics/js/particles.js'></script>
+			<script type='text/javascript' src='statics/js/aos.js'></script>
+	</body>
+
+</html>
